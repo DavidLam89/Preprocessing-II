@@ -1,1 +1,35 @@
 // Navigation Styles here
+    nav {
+
+
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 2px dashed @navigation-border;
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+            color: @font-color;
+            margin: 1rem;
+        }
+
+        .second-item {
+
+            display: flex;
+                @media @mobile {
+                    width: 100%;
+                    margin-bottom: 0.8rem;
+                    justify-content: space-evenly;
+                }
+        
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    
